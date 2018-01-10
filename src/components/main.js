@@ -13,7 +13,7 @@ export default class Main extends Component {
 				                type = "checkbox"
 				                id = "checkAll"
 				                checked = {this.props.isCheckedAll}
-				                onClick = {(e) => {
+				                onChange = {(e) => {
 				                	this.props.checkedAll(e.target.checked);
 				                }}
 			                />

@@ -10,7 +10,7 @@ export default class Item extends Component {
 			        <input
 			        	type = "checkbox"
 			        	checked = {data.selected}
-			        	onClick = {(e) => {
+			        	onChange = {(e) => {
 			        		this.props.changeSelected(index,e.target.checked);
 			        	}}
 			        />
@@ -21,7 +21,7 @@ export default class Item extends Component {
 			        <input
 			        	type="checkbox"
 			        	checked={data.like}
-			        	onClick = {(e) => {
+			        	onChange = {(e) => {
 			        		this.props.changeLike(index,e.target.checked);
 			        	}}
 			        />
